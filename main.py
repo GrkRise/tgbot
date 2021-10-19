@@ -19,7 +19,7 @@ def help(message):
     bot.send_message(message.chat.id, 'Привет', reply_markup=keyboard)
 
 @bot.message_handler(commands=['show_web'])
-def show_web_command(message):
+def show_web(message):
     markup = types.InlineKeyboardMarkup()
     btn_web = types.InlineKeyboardButton(text = 'web', url = 'https://core.telegram.org/bots/api')
     markup.add(btn_web)
